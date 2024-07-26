@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<link rel="stylesheet" href="pg.css">
+<script src="https://kit.fontawesome.com/962df23dac.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<header>
+<nav>
+   
+<ul id="sidemenu">
+<li><a href="#Home">Home</a></li>
+<li><a href="#Location">Location</a></li>
+<li><a href="#Gallery">Gallery</a></li>
+<li><a href="#About">About</a></li>
+<li><a href="#Contact">Contact</a></li>
+<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+</header>
+<main>
+    <section id="intro">
+    <div class="Container">
+        <h1>Welcome to Dolphin Aquatics</h1>
+        <p class="pad_1">Dolphin Aquatics, led by Dronacharya Awardee Mr. Nihar Ameen, is a premier swimming academy in India. Since 1984, we have been nurturing swimming talent, from beginners to Olympic champions. We are an AUSTSWIM Recognized Centre, ensuring high teaching standards and consistency. Our pathway begins from teaching beginners to learn to swim to coaching champions for the Olympics. There is no better place to start your swim journey, than here!
+        </p>
+    </div>
+    <div class="video">
+    <h3>What we do?</h3>
+  
+    <video width="100" height="140" controls="">
+<source src="movie.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">
+                                              Your browser does not support the video tag.
+                                              </video><br>
+                                            
+    </div>
+    </section>
+</main>
+<footer>
+<p>Dolphin Aquatics © 1984 •</p>
+</footer>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+function openmenu()
+    {
+        sidemenu.style.right="0";
+
+    }
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+        
+    }
+
+</script>
+
+</body>
+</html>
